@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "../styles.css";
 
-import { courseData } from "../data/courses"; // мы сделаем этот файл ниже
+import { courseData } from "../data/courses";
 
 export default function Quiz() {
   const { id } = useParams();
