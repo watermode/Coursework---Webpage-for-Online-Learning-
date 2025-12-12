@@ -1,0 +1,110 @@
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.home-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.16;
+  z-index: -1;
+}
+
+.home-header h1 {
+  font-size: 52px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.home-header p {
+  font-size: 22px;
+  line-height: 1.55;
+  max-width: 780px;
+  margin: 0 auto 25px;
+  color: #333;
+  font-weight: 400;
+  opacity: 0.95;
+}
+
+.home-btn {
+  display: inline-block;
+  background: #2979ff;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.home-btn:hover {
+  background: #1b5fd1;
+  transform: translateY(-2px);
+}
+
+.popular-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-top: 70px;
+  margin-bottom: 35px;
+  color: #222;
+}
+
+.course-cards {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.course-card {
+  width: 300px;
+  background: #ffffffcc;
+  backdrop-filter: blur(6px);
+  padding: 28px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+  transition: 0.25s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.18);
+}
+
+.course-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.course-card p {
+  font-size: 17px;
+  opacity: 0.85;
+  line-height: 1.45;
+}
+.home-header p {
+  font-size: 22px;         
+  line-height: 1.55;
+  max-width: 780px;
+  margin: 0 auto 25px;
+  color: #111;              
+  font-weight: 400;
+  opacity: 1;             
+}
