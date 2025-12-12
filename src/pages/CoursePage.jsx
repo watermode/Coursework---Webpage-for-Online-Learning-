@@ -1,4 +1,3 @@
-// src/pages/CoursePage.jsx
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import "../styles.css";
@@ -6,7 +5,6 @@ import "../styles.css";
 export default function CoursePage() {
   const { id } = useParams();
 
-  // Данные всех курсов
   const courseData = {
     1: {
       title: "Вступ до React",
@@ -110,7 +108,6 @@ export default function CoursePage() {
         <h1 className="course-title">{course.title}</h1>
         <p className="course-description">{course.description}</p>
 
-        {/* Зміст курсу */}
         <h2 className="section-title">📘 Зміст курсу</h2>
         <ul className="course-list">
           {course.content.map((item, index) => (
@@ -118,7 +115,6 @@ export default function CoursePage() {
           ))}
         </ul>
 
-        {/* Відеоурок */}
         <h2 className="section-title">🎥 Відеоурок</h2>
         <div className="video-wrapper">
           <iframe
@@ -129,7 +125,6 @@ export default function CoursePage() {
           </iframe>
         </div>
 
-        {/* Кнопки */}
         <Link to={`/courses/${id}/lessons`} className="start-btn">➤ Прогрес навчання</Link>
         <Link to={`/courses/${id}/test`} className="test-btn">📝 Пройти тест</Link>
 
