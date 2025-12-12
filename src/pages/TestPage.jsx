@@ -1,4 +1,3 @@
-// src/pages/TestPage.jsx
 import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import "../styles.css";
@@ -6,7 +5,6 @@ import "../styles.css";
 export default function TestPage() {
   const { id } = useParams();
 
-  // ВОПРОСЫ ДЛЯ КАЖДОГО КУРСА
   const tests = {
     1: [
       {
@@ -251,13 +249,11 @@ export default function TestPage() {
 
   const questions = tests[id];
 
-  // Хуки ВСЕГДА на верхнем уровне
-  const [current, setCurrent] = useState(0); // номер вопроса
-  const [selected, setSelected] = useState([]); // [{index, correct}]
+  const [current, setCurrent] = useState(0);
+  const [selected, setSelected] = useState([]); 
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
 
-  // Если теста для такого курса нет
   if (!questions) {
     return (
       <div className="test-container">
@@ -270,7 +266,6 @@ export default function TestPage() {
   }
 
   const handleAnswer = (isCorrect, optionIndex) => {
-    // Не даём менять ответ, если уже выбрали
     if (selected[current]) return;
 
     setSelected((prev) => {
