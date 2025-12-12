@@ -6,28 +6,24 @@
   font-family: "Arial", sans-serif;
 }
 
-/* Заголовок */
 .course-title {
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-/* Описание */
 .course-description {
   font-size: 20px;
   color: #333;
   margin-bottom: 30px;
 }
 
-/* Заголовки секций */
 .section-title {
   font-size: 26px;
   font-weight: 600;
   margin: 25px 0 15px;
 }
 
-/* Видео */
 .video-wrapper {
   display: flex;
   justify-content: center;
@@ -40,7 +36,6 @@
   border-radius: 12px;
 }
 
-/* Список курса */
 .course-list {
   text-align: left;
   display: inline-block;
@@ -49,7 +44,6 @@
   margin-bottom: 40px;
 }
 
-/* --- КНОПКИ --- */
 .start-btn,
 .test-btn {
   display: inline-flex;
@@ -64,7 +58,7 @@
   text-decoration: none;
   cursor: pointer;
   transition: 0.25s ease;
-  margin: 5px; /* 🔥 Расстояние между кнопками */
+  margin: 5px; 
 }
 
 .start-btn {
@@ -78,7 +72,7 @@
 
 .test-btn {
   background: #f1f1f1;
-  color: black;  /* 🔥 Чёрный текст */
+  color: black;  
   border: 2px solid #ccc;
 }
 
@@ -87,7 +81,6 @@
   border-color: #999;
 }
 
-/* Кнопка назад */
 .back-link {
   font-size: 18px;
   display: inline-block;
