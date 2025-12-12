@@ -4,7 +4,6 @@ import { useParams, Link } from "react-router-dom";
 export default function CourseLessons() {
   const { id } = useParams();
 
-  // Уроки для каждого курса
   const lessonsData = {
     1: [
       "Що таке React?",
@@ -47,7 +46,6 @@ export default function CourseLessons() {
 
   const lessons = lessonsData[id];
 
-  // Загружаем прогресс из localStorage
   const savedProgress = JSON.parse(localStorage.getItem(`progress_${id}`)) || [];
   const [completed, setCompleted] = useState(savedProgress);
 
@@ -75,7 +73,6 @@ export default function CourseLessons() {
 
       <h1>Навчальні уроки</h1>
 
-      {/* Прогресбар */}
       <div style={{ margin: "20px 0" }}>
         <div style={{
           height: "20px",
@@ -98,7 +95,6 @@ export default function CourseLessons() {
         </p>
       </div>
 
-      {/* Список уроків */}
       <ul style={{ listStyle: "none", padding: 0 }}>
         {lessons.map((lesson, index) => (
           <li
