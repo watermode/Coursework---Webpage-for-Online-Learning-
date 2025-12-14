@@ -35,7 +35,6 @@ export default function Courses() {
             <h3>{course.title}</h3>
             <p>{course.description}</p>
 
-            {/* ВАЖНО: правильная навигация */}
             <Link to={`/courses/${course.id}`} className="course-btn">
               Переглянути
             </Link>
